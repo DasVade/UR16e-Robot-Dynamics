@@ -31,14 +31,16 @@ All computations and visualizations were implemented in MATLAB.
 ---
 
 ## 🧩 File Structure
-src/
-├── main.m
-├── forward_dynamics.m
-├── inverse_dynamics.m
-├── plot_results.m
-├── utils/
-│   ├── dh_transform.m
-│   ├── compute_jacobian.m
-│   └── inertia_matrix.m
-└── assets/
-└── rigid_body.png
+Project organization overview:
+
+- **src/** — main source code folder  
+  - `main.m` — entry script for simulation  
+  - `forward_dynamics.m` — forward dynamics computation  
+  - `inverse_dynamics.m` — inverse dynamics solver  
+  - `plot_results.m` — visualization of simulation results  
+  - **utils/** — helper functions  
+    - `dh_transform.m` — compute homogeneous transforms  
+    - `compute_jacobian.m` — calculate Jacobians  
+    - `inertia_matrix.m` — build inertia matrix  
+- **assets/** — figures and visualization images  
+  - `rigid_body.png` — main simulation visualization
