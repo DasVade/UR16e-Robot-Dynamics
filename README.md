@@ -19,6 +19,15 @@ All computations and visualizations were implemented in MATLAB.
   <em>UR16e manipulator simulation (MATLAB output).</em>
 </div>
 
+The implementation includes:
+- Kinematic modeling based on Denavit–Hartenberg parameters  
+- Symbolic dynamics derivation using the Euler–Lagrange formulation  
+- Simulation of joint motion, torque profiles, and end-effector trajectories  
+- Visualization and plotting of dynamic responses  
+
+Developed primarily in **MATLAB**, with numerical solvers and plotting utilities for analysis.
+
+
 ---
 
 ## 🧠 Learning Objectives
