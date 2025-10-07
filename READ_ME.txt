@@ -1,0 +1,5 @@
+mykinematics是运动学部分的代码
+mydynamics是动力学部分的代码
+RRT是碰撞检测和路径/轨迹规划部分的代码
+control是控制律部分代码
+simulation包含了仿真所需文件
