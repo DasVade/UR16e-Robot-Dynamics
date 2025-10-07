@@ -18,6 +18,7 @@ This project focuses on the **forward and inverse dynamics** of a UR16e 6-DOF in
   <em>Fig. 1. UR16e manipulator with obstacle spheres (simulation visualization).</em>
 </div>
 
+
 The implementation includes:
 - Kinematic modeling based on Denavit–Hartenberg parameters  
 - Symbolic dynamics derivation using the Euler–Lagrange formulation  
