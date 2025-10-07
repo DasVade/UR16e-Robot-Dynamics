@@ -13,9 +13,9 @@ This repository contains the course project for *Robotics (Spring 2025)*, comple
 This project focuses on the **forward and inverse dynamics** of a UR16e 6-DOF industrial manipulator.  
 
 <div align="center">
-  <img src="assets/rigid_body.png" alt="UR16e dynamics simulation" width="400"/>
+  <img src="assets/rigid_body.png" alt="UR16e dynamics simulation" width="420"/>
   <br/>
-  <em>Fig. 1. UR16e manipulator with obstacle spheres (simulation visualization).</em>
+  <em>UR16e manipulator simulation visualization (MATLAB).</em>
 </div>
 
 
