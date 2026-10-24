@@ -1,0 +1,9 @@
+outputs/
+__pycache__/
+.venv*/
+slprj/
+*.slxc
+*.asv
+.env*
+*.key
+*.pem

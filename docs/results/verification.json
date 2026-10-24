@@ -1,0 +1,10 @@
+{
+  "execution": "Independent Python reference; MATLAB and Simulink NOT executed",
+  "seed": 5170,
+  "configurations_checked": 50,
+  "max_jacobian_residual": 1.2968004448055126e-10,
+  "minimum_mixed_unit_jacobian_singular_value": 0.079364261077454,
+  "sampled_path_length_m": 0.7511727619711401,
+  "duration_s": 6,
+  "samples": 121
+}
