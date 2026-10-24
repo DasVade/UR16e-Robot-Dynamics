@@ -37,6 +37,7 @@ MATLAB is unavailable on the verification host: this entry point is prepared but
 3.12 with NumPy, SciPy, Matplotlib and Pillow:
 
 ```powershell
+python -m pip install -r portfolio/requirements-reference.txt
 python portfolio/verify_reference.py
 ```
 
