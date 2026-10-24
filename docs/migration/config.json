@@ -1,0 +1,115 @@
+{
+  "scene": [
+    {
+      "type": "box",
+      "center": [
+        0.635,
+        0.57,
+        0.482
+      ],
+      "half_extents": [
+        0.055,
+        0.055,
+        0.07
+      ]
+    },
+    {
+      "type": "sphere",
+      "center": [
+        -0.25,
+        0.5,
+        0.3
+      ],
+      "radius": 0.08
+    }
+  ],
+  "planning": [
+    {
+      "seed": 5170,
+      "planning_seconds": 0.1328881259978516,
+      "iterations": 72,
+      "raw_length_rad": 2.690894332495451,
+      "smoothed_length_rad": 2.0081775342625683,
+      "direct_edge_valid": false,
+      "fine_edge_spacing_rad": 0.005,
+      "planning_clearance_margin_m": 0.015
+    },
+    {
+      "seed": 5171,
+      "planning_seconds": 0.39445995499409037,
+      "iterations": 244,
+      "raw_length_rad": 3.3605084806321526,
+      "smoothed_length_rad": 2.2096357058295273,
+      "direct_edge_valid": false,
+      "fine_edge_spacing_rad": 0.005,
+      "planning_clearance_margin_m": 0.015
+    },
+    {
+      "seed": 5172,
+      "planning_seconds": 0.11551664499711478,
+      "iterations": 67,
+      "raw_length_rad": 2.79716428417439,
+      "smoothed_length_rad": 1.9635236041748185,
+      "direct_edge_valid": false,
+      "fine_edge_spacing_rad": 0.005,
+      "planning_clearance_margin_m": 0.015
+    }
+  ],
+  "joint_order": [
+    "shoulder_pan_joint",
+    "shoulder_lift_joint",
+    "elbow_joint",
+    "wrist_1_joint",
+    "wrist_2_joint",
+    "wrist_3_joint"
+  ],
+  "initial_offset_rad": [
+    0.01,
+    -0.01,
+    0.01,
+    -0.005,
+    0.005,
+    -0.005
+  ],
+  "controller": "CT = ID_nom(q,v,ad+64*(qd-q)+16*(vd-v)); applied torque clipped",
+  "torque_bounds_Nm": [
+    330.0,
+    330.0,
+    150.0,
+    56.0,
+    56.0,
+    56.0
+  ],
+  "joint_lower_rad": [
+    -6.283185307179586,
+    -6.283185307179586,
+    -3.141592653589793,
+    -6.283185307179586,
+    -6.283185307179586,
+    -6.283185307179586
+  ],
+  "joint_upper_rad": [
+    6.283185307179586,
+    6.283185307179586,
+    3.141592653589793,
+    6.283185307179586,
+    6.283185307179586,
+    6.283185307179586
+  ],
+  "velocity_bounds_rad_s": [
+    2.0943951023931953,
+    2.0943951023931953,
+    3.141592653589793,
+    3.141592653589793,
+    3.141592653589793,
+    3.141592653589793
+  ],
+  "collision_check_period_s": 0.005,
+  "additional_edge_spacing_rad": 0.005,
+  "self_collision_policy": "indices 0..6 separated by >=3; adjacent/fixed helper pairs excluded",
+  "integration": "PyBullet semi-implicit Euler; contacts disabled; obstacles checked independently",
+  "time_parameterization": "piecewise quintic along smoothed RRT joint-space edges, zero velocity and acceleration at every knot",
+  "reference_samples": 28081,
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "python": "3.11.15"
+}

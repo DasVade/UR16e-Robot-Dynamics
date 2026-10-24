@@ -1,0 +1,54 @@
+{
+  "dt_s": 0.00025,
+  "duration_s": 7.02,
+  "rmse_per_joint_rad": [
+    0.0014919044506852427,
+    0.0014914802159572132,
+    0.00149129401584455,
+    0.0007455200670876292,
+    0.0007458825298063233,
+    0.0007454263203106583
+  ],
+  "pooled_rmse_rad": 0.001179127593037362,
+  "peak_error_per_joint_rad": [
+    0.01,
+    0.010000000000000009,
+    0.010000000000000009,
+    0.0050000000000000044,
+    0.0050000000000000044,
+    0.005
+  ],
+  "peak_applied_Nm": [
+    2.486928395384637,
+    88.47856564490209,
+    28.70268317298334,
+    2.9269821920693713,
+    0.44145555130652747,
+    0.0006513648673607494
+  ],
+  "saturation_fraction": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "actuator_limit_violations": 0,
+  "reference_velocity_limit_violations": 0,
+  "actual_velocity_limit_violations": 0,
+  "validation": {
+    "reference": {
+      "minimum_sampled_clearance_m": 0.018348631689399146,
+      "colliding_samples": 0,
+      "invalid_dense_edges": 0,
+      "position_limit_violations": 0
+    },
+    "actual": {
+      "minimum_sampled_clearance_m": 0.0183486498907965,
+      "colliding_samples": 0,
+      "invalid_dense_edges": 0,
+      "position_limit_violations": 0
+    }
+  }
+}

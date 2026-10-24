@@ -1,0 +1,6 @@
+{
+  "main_dt_s": 0.00025,
+  "half_dt_s": 0.000125,
+  "identical_reference_max_difference_rad": 0.0,
+  "maximum_state_difference_rad": 7.126821511049819e-06
+}

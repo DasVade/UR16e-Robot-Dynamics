@@ -5,6 +5,8 @@ supersedes the execution-status and repair-status statements below. Replaced
 MATLAB dynamics/import sources are preserved in baselines/; the original URDF,
 models, IK and planning sources remain intact. New dynamic results are URDF-based
 PyBullet execution, while MATLAB/Simulink remains unexecuted.
+Current Python/legacy locations and integrated execution are described in
+[the Python workflow](PYTHON_WORKFLOW.md); old source paths below are historical.
 
 Baseline: `da7a51b`; all original MATLAB, live scripts, Simulink models, MAT
 data, meshes and helper files are preserved. ORIGINAL_INVENTORY.json records

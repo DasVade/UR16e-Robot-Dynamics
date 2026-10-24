@@ -6,7 +6,8 @@ from scipy.optimize import least_squares
 from scipy.spatial.transform import Rotation
 import pybullet as p
 from urdf_model import Model,prepare,ROOT,JOINTS,origin
-ap=argparse.ArgumentParser();ap.add_argument('--output',default='outputs/executed_01');ap.add_argument('--dt',type=float,default=.00025);args=ap.parse_args()
+from controllers import command as controller_command
+ap=argparse.ArgumentParser();ap.add_argument('--output',default='outputs/executed_01');ap.add_argument('--dt',type=float,default=.00025);ap.add_argument('--payload-only',action='store_true');args=ap.parse_args()
 out=ROOT/args.output;assert not out.exists(),'Choose a fresh output path';out.mkdir(parents=True)
 start=time.perf_counter();path=prepare(out/'model');model=Model();p.connect(p.DIRECT);p.setGravity(0,0,-9.81)
 def load(path):
@@ -66,7 +67,7 @@ xml=ET.parse(path);inert=xml.find(".//link[@name='tool0']/inertial");inert.find(
 dt=args.dt;duration=6.;limits=np.array([330,330,150,56,56,56.]);q0=np.array([0,-1.2,1.2,-.8,.8,0]);q1=np.array([.9,-.5,.5,-.2,1.2,1]);offset=np.array([.08,-.08,.06,-.05,.04,-.03]);kp=np.array([180,180,120,50,30,20]);kd=np.array([30,35,22,8,5,3]);kpa=np.full(6,64.);kda=np.full(6,16.)
 config={'dt_s':dt,'duration_s':duration,'joint_order':JOINTS,'q0':q0.tolist(),'q1':q1.tolist(),'initial_offset_rad':offset.tolist(),'torque_limits_Nm':limits.tolist(),'limit_source':'supplied URDF effort fields, treated as simulation bounds, not validated hardware ratings','pd_Kp_Nm_per_rad':kp.tolist(),'pd_Kd_Nm_s_per_rad':kd.tolist(),'ct_Kp_per_s2':kpa.tolist(),'ct_Kd_per_s':kda.tolist(),'payload_kg':1.,'seed':5170,'integration':'PyBullet semi-implicit Euler, torque update every simulation step; contacts disabled','reference':'6 s quintic rest-to-rest joint interpolation','fairness':'same plant/IC/reference/dt/limits; gains have different units and are not claimed equivalent objectives'}
 (out/'config.json').write_text(json.dumps(config,indent=2)+'\n');rows=[];p.setTimeStep(dt)
-for mismatch in [False,True]:
+for mismatch in ([True] if args.payload_only else [False,True]):
     for controller in ['pd_gravity','computed_torque']:
         plant,joints=load(payload if mismatch else path);reset(plant,joints,q0+offset)
         for i in range(-1,p.getNumJoints(plant)):p.setCollisionFilterGroupMask(plant,i,0,0)
@@ -75,8 +76,9 @@ for mismatch in [False,True]:
         for i,now in enumerate(t):
             states=p.getJointStates(plant,joints);q=np.array([x[0] for x in states]);v=np.array([x[1] for x in states]);actual.append(q);vel.append(v);ee.append(model.frames(q)[0]['tool0'][:3,3])
             if i==len(t)-1:break
-            if controller=='pd_gravity':raw=kp*(desired[i]-q)+kd*(vd[i]-v)+np.array(p.calculateInverseDynamics(b,q.tolist(),[0]*6,[0]*6))
-            else:raw=np.array(p.calculateInverseDynamics(b,q.tolist(),v.tolist(),(ad[i]+kpa*(desired[i]-q)+kda*(vd[i]-v)).tolist()))
+            inverse=lambda q,v,a:np.array(p.calculateInverseDynamics(b,np.asarray(q).tolist(),np.asarray(v).tolist(),np.asarray(a).tolist()))
+            gravity=lambda q:inverse(q,np.zeros(6),np.zeros(6))
+            raw=controller_command(controller,q,v,desired[i],vd[i],ad[i],inverse,gravity)
             u=np.clip(raw,-limits,limits);command.append(raw);applied.append(u);p.setJointMotorControlArray(plant,joints,p.TORQUE_CONTROL,forces=u.tolist());p.stepSimulation()
         actual=np.array(actual);vel=np.array(vel);applied=np.array(applied);command=np.array(command);error=actual-desired
         assert np.isfinite(actual).all() and abs(actual).max()<10

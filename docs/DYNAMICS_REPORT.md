@@ -1,5 +1,11 @@
 # UR16e dynamics, tracking and planning experiments
 
+The current primary entry point and integrated obstacle-avoidance execution are
+documented in [Python workflow](PYTHON_WORKFLOW.md). MATLAB/Simulink files named
+below now live under `legacy/`; pre-repair copies are under `legacy/baselines/`.
+The original URDF/meshes remain at root `simulink/`. Results in this report are
+preserved; the new blocked-path experiment is a separate measured scenario.
+
 Executed 2026-10-24 in the existing WSL2 installation, Python 3.11.15 and
 PyBullet 3.2.7. The original MATLAB/Simulink route could not be executed:
 MATLAB was absent from Windows PATH, its standard install directory, the

@@ -11,8 +11,9 @@ with zipfile.ZipFile(args.archive) as z:
         if any(x in parts for x in ['.git','slprj','__MACOSX']) or any(x.startswith('._') for x in parts) or info.filename.endswith(('.DS_Store','.slxc','.asv')):continue
         data=z.read(info);rel=info.filename.split('/src/',1)[-1] if '/src/' in info.filename else None
         target=root/rel if rel else None
+        if target and not target.is_file() and (root/'legacy'/rel).is_file():target=root/'legacy'/rel
         row={'archive_entry':info.filename,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),'repository_path':rel,'match':bool(target and target.is_file() and target.read_bytes()==data)}
-        baseline=root/'baselines'/rel if rel else None
+        baseline=root/'legacy/baselines'/rel if rel else None
         compare=baseline if baseline and baseline.is_file() else target
         if compare and compare.is_file():
             original=compare.read_bytes();row['newline_normalized_match']=data.replace(b'\r\n',b'\n')==original.replace(b'\r\n',b'\n')
