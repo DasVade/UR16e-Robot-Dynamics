@@ -1,0 +1,7 @@
+numpy==2.4.6
+scipy==1.17.1
+pybullet==3.2.7
+matplotlib==3.11.2
+Pillow==13.0.0
+trimesh==5.2.0
+pycollada==0.9.3

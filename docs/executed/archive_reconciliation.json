@@ -1,0 +1,605 @@
+{
+  "archive_sha256": "ffd47534bdf81f6454f770841f38246c77eca32053114422be786649bca6a49e",
+  "files": [
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/UR16e.docx",
+      "bytes": 2088176,
+      "sha256": "e6ce685c935e75cfb29bbdb4e6a5ea263a10154bd197a982ef62a4f884d86da4",
+      "repository_path": null,
+      "match": false,
+      "report_text_inspected": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/UR16e/UR16e.step",
+      "bytes": 48100886,
+      "sha256": "b867a68e1a7abfd4b780bf104a5948214b3fb2f7434a6102fb0a1b5526603fde",
+      "repository_path": null,
+      "match": false,
+      "header": "ISO-10303-21;\r\nHEADER;\r\nFILE_DESCRIPTION (( 'STEP AP214' ),\r\n    '1' );\r\nFILE_NAME ('1006927_Solid_A.step',\r\n    '2024-04-22T11:25:25',\r\n    ( '' ),\r\n    ( '' ),\r\n    'SwSTEP 2.0',\r\n    'SolidWorks 2020',\r\n    '' );\r\nFILE_SCHEMA (( 'AUTOMOTIVE_DESIGN' ));\r\nENDSEC;\r\n\r\nDATA;\r\n#1 = SURFACE_STYLE_FILL_AREA ( #26890 ) ;\r\n#2 =( GEOMETRIC_REPRESENTATION_CONTEXT ( 3 ) GLOBAL_UNCERTAINTY_ASSIGNED_CONTEXT ( ( #238997 ) ) GLOBAL_UNIT_ASSIGNED_CONTEXT ( ( #116934, #420127, #388886 ) ) REPRESENTATION_CONTEXT ( 'NONE', 'WORKASPACE' ) );\r\n#3 = CARTESIAN_POINT ( 'NONE',  ( -9.758529172313533451, 262.1814392579215678, 73.58953008069798329 ) ) ;\r\n#4 = ORIENTED_EDGE ( 'NONE', *, *, #204145, .T. ) ;\r\n#5 = CARTESIAN_POINT ( 'NONE',  ( -516.2729521433777791, 116.7014644960815275, 18.42521386850661003 ) ) ;\r\n#6 = CARTESIAN_POINT ( 'NONE',  ( 36.93346813854835631, 320.3473148622243230, 65.77134159859346596 ) ) ;\r\n#7 = CARTESIAN_POINT ( 'NONE',  ( 28.32980918867914966, 272.1143470739548889, 40.30097067734867977 ) ) ;\r\n#8 = EDGE_CURVE ( 'NONE', #178123, #96421, #101191, .T. ) ;\r\n#9 = CARTESIAN_POINT ( 'NONE',  ( 1.448530734950037147, 54.62857487226892772, 26.49783611238046177 ) ) ;\r\n#11 = CARTESIAN_POINT ( 'NONE',  ( -8.149930030606448383, 10.43381527126862096, -64.19946581166472299 ) ) ;\r\n#10 = SURFACE_SIDE_STYLE ('',( #33545 ) ) ;\r\n#13 = ORIENTED_EDGE ( 'NONE', *, *, #348048, .F. ) ;\r\n#12 = CARTESIAN_POINT ( 'NONE',  ( 52.12722764204274739, 61.10247246852127745, 60.75691064185972579 ) ) ;\r\n#14 = ORI"
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/UR16e/UR16e.urdf",
+      "bytes": 14132,
+      "sha256": "3473a90bb2d021d43bbd61d8e07f33e183f731c139b66263f7fbf580e98ef980",
+      "repository_path": null,
+      "match": false,
+      "links": 11,
+      "joints": 10
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/UR16e/UR16e_datasheets.pdf",
+      "bytes": 264154,
+      "sha256": "0b73dd5b53f2efb30b5e29154f0d5cb3861e943663927d23dc4715d30f01c894",
+      "repository_path": null,
+      "match": false
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/UR16e/meshes.rar",
+      "bytes": 5148140,
+      "sha256": "346a9611b6502ff916b2fedad7527bf250d6befd60013f2753733d8999d3c434",
+      "repository_path": null,
+      "match": false
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/LICENSE",
+      "bytes": 1067,
+      "sha256": "f7e1331d771f2241191b4855c12a3bcafc334491f77dd7ef842f9dc2f8187793",
+      "repository_path": "LICENSE",
+      "match": false,
+      "newline_normalized_match": true,
+      "status": "byte difference; see normalized comparison; original retained"
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/README.md",
+      "bytes": 1322,
+      "sha256": "701776ea415a1bd63c36b4eb7ec55fb5676f808e547d3df33efee67bd22a44a5",
+      "repository_path": "README.md",
+      "match": false,
+      "newline_normalized_match": false,
+      "status": "byte difference; see normalized comparison; original retained"
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/READ_ME.txt",
+      "bytes": 206,
+      "sha256": "9cc72c74556e157176f3da0d0ae19e8eee64e9813d4443103fb7f428c181e21a",
+      "repository_path": "READ_ME.txt",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/simulink/UR16e.urdf",
+      "bytes": 14132,
+      "sha256": "3473a90bb2d021d43bbd61d8e07f33e183f731c139b66263f7fbf580e98ef980",
+      "repository_path": "simulink/UR16e.urdf",
+      "match": false,
+      "newline_normalized_match": true,
+      "status": "byte difference; see normalized comparison; original retained",
+      "links": 11,
+      "joints": 10,
+      "xml_semantic_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/simulink/import_urdf.m",
+      "bytes": 113,
+      "sha256": "7915de5ff5ccf9a6cdc05b2b3d4588cc28c47c30b485fd4a858f55d9b357916a",
+      "repository_path": "simulink/import_urdf.m",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/simulink/UR16e.slx",
+      "bytes": 523277,
+      "sha256": "4f43a0a894d8a649b64d8873a5cc597e3dd86ecb31d4d7be895f6e26239f0263",
+      "repository_path": "simulink/UR16e.slx",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/mykinematics/myfkine.m",
+      "bytes": 1265,
+      "sha256": "31a770fcea8f3f0a26f8f07dbb498754b1a042e916ef625a101c9dd43bcdeaff",
+      "repository_path": "mykinematics/myfkine.m",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/mykinematics/myikine.m",
+      "bytes": 5425,
+      "sha256": "903d00b6468ba7a912ee1de402b5b073ec3ac66455d432ae1d99b885b84dd777",
+      "repository_path": "mykinematics/myikine.m",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/RRT/RRT.m",
+      "bytes": 3524,
+      "sha256": "7df69447f9783aa6ddc63063de341e106527a2079fa1c6d4eacabeb5f822c586",
+      "repository_path": "RRT/RRT.m",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/RRT/path.mat",
+      "bytes": 524,
+      "sha256": "a9b2ec959d2f020fcace8a01248aaee480b8de8d4f550962c0c27bc47bad7749",
+      "repository_path": "RRT/path.mat",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/RRT/SmoothenPath.m",
+      "bytes": 2379,
+      "sha256": "5c3c2d94884db0bb854377bb961e0b4f56adc5fe25693f13e2e7acc6dc6818b2",
+      "repository_path": "RRT/SmoothenPath.m",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/RRT/rpy2rotm.m",
+      "bytes": 357,
+      "sha256": "cec0316b5ecefcf8542b42c85251443b45ec85ff71fefaac00d56867abcb8ee4",
+      "repository_path": "RRT/rpy2rotm.m",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/RRT/check_collision.m",
+      "bytes": 2933,
+      "sha256": "ea66371e23896cdd11e537757a2ec2bcce68d3ec3d40fdbbf40d1a1d5aea4aa8",
+      "repository_path": "RRT/check_collision.m",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/RRT/myfkine.m",
+      "bytes": 1265,
+      "sha256": "31a770fcea8f3f0a26f8f07dbb498754b1a042e916ef625a101c9dd43bcdeaff",
+      "repository_path": "RRT/myfkine.m",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/RRT/rotm2rpy.m",
+      "bytes": 679,
+      "sha256": "15addb20cde317e1f7694045ac2fa342261d14403d41285ad7dbf48a46796124",
+      "repository_path": "RRT/rotm2rpy.m",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/RRT/draw_sphere.m",
+      "bytes": 458,
+      "sha256": "7d0afdce4a6fe47a87af5260788f914683d5996dc661db4dc1ff9a8a30270392",
+      "repository_path": "RRT/draw_sphere.m",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/RRT/check_edge.m",
+      "bytes": 1550,
+      "sha256": "12bd6c0c6bcf4371dee327288ad89a6560fe4d4a444a3a347b59dc30d6cc95c4",
+      "repository_path": "RRT/check_edge.m",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/RRT/interpolate_path.m",
+      "bytes": 889,
+      "sha256": "cdcefffaf09d3c0a8124e1b0d233219b0abe001465bf735bd095e1fc68cdda35",
+      "repository_path": "RRT/interpolate_path.m",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/RRT/myikine.m",
+      "bytes": 5425,
+      "sha256": "903d00b6468ba7a912ee1de402b5b073ec3ac66455d432ae1d99b885b84dd777",
+      "repository_path": "RRT/myikine.m",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/RRT/main.m",
+      "bytes": 4929,
+      "sha256": "f0441395769998448eed031fa9842f879b17fba82dac4dc516b8a911944e32ea",
+      "repository_path": "RRT/main.m",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/RRT/SampleJointAngles.m",
+      "bytes": 552,
+      "sha256": "7c0c1fc07771144a328448dbbaafabbc26738e7a09b49cd545131529d339704f",
+      "repository_path": "RRT/SampleJointAngles.m",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/RRT/main_cartesian.m",
+      "bytes": 7950,
+      "sha256": "36a5dc5a0015cf632421b10e2bb7eeae1440c94a768732f2eca0774640fa4cf5",
+      "repository_path": "RRT/main_cartesian.m",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/RRT/FindCollisionFreePath.m",
+      "bytes": 1889,
+      "sha256": "5329d62f9816fee4032b3fcd0f8eba55af922174808203b568a620513be7f7cc",
+      "repository_path": "RRT/FindCollisionFreePath.m",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/RRT/READ_ME.txt",
+      "bytes": 40,
+      "sha256": "cd3877b114d301ab00dc6f13c4e3d7a7f5c27aa5de51deba339368c395f7cbfe",
+      "repository_path": "RRT/READ_ME.txt",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/RRT/draw_cuboid.m",
+      "bytes": 981,
+      "sha256": "5df19b02290f753917dd5513a8e43a99ec3a0b674500a347fe14442f6f6554c2",
+      "repository_path": "RRT/draw_cuboid.m",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/RRT/b_spline.m",
+      "bytes": 2255,
+      "sha256": "c370ffb615c6f2e76ae87def3f66dd6bd0aa416d7de1c27820bde93819ed45e1",
+      "repository_path": "RRT/b_spline.m",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/mydynamics/compute_coriolis.m",
+      "bytes": 959,
+      "sha256": "7f157030cdcc3a66ad20e7eccf1c45997194af3b1c3f01b04d639c1f2002e5df",
+      "repository_path": "mydynamics/compute_coriolis.m",
+      "match": false,
+      "newline_normalized_match": true,
+      "status": "byte difference; see normalized comparison; original retained"
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/mydynamics/compute_gravity.m",
+      "bytes": 598,
+      "sha256": "ab64c668e5ef210c3e1fbabb41d5486dfd0dfb64a3f6cd369f72a9be480d1c19",
+      "repository_path": "mydynamics/compute_gravity.m",
+      "match": false,
+      "newline_normalized_match": true,
+      "status": "byte difference; see normalized comparison; original retained"
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/mydynamics/robot_inversedynamics.m",
+      "bytes": 1773,
+      "sha256": "c90949604a334068baadc0f7a9bd50656815d2daeffbf16efc9fd15e32b81e58",
+      "repository_path": "mydynamics/robot_inversedynamics.m",
+      "match": false,
+      "newline_normalized_match": true,
+      "status": "byte difference; see normalized comparison; original retained"
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/mydynamics/dh_transform.m",
+      "bytes": 275,
+      "sha256": "feed7eafc0958a0e6d74bd86b38b8af47aa10e24eec52f3961ea848612c4fe6b",
+      "repository_path": "mydynamics/dh_transform.m",
+      "match": false,
+      "newline_normalized_match": true,
+      "status": "byte difference; see normalized comparison; original retained"
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/mydynamics/skew.m",
+      "bytes": 142,
+      "sha256": "c2901eef224916c2cda1341b1df91c0ef65e398f9441b9f7c73eb47ff414c977",
+      "repository_path": "mydynamics/skew.m",
+      "match": false,
+      "newline_normalized_match": true,
+      "status": "byte difference; see normalized comparison; original retained"
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/mydynamics/compute_jacobian_end.m",
+      "bytes": 992,
+      "sha256": "003157435aefb7b74589e1b781d28ad93c9b7e98baaf097e9c043be9d1f5a08e",
+      "repository_path": "mydynamics/compute_jacobian_end.m",
+      "match": false,
+      "newline_normalized_match": true,
+      "status": "byte difference; see normalized comparison; original retained"
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/mydynamics/compute_mass_matrix.m",
+      "bytes": 1320,
+      "sha256": "4da34d553b9122c35c52c4555cc5d962785304e097e93ab68cd1c4f939c9e2e0",
+      "repository_path": "mydynamics/compute_mass_matrix.m",
+      "match": false,
+      "newline_normalized_match": true,
+      "status": "byte difference; see normalized comparison; original retained"
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/mydynamics/compute_jacobian.m",
+      "bytes": 1484,
+      "sha256": "b0aaa70f5dcabbf7c826449d5335df4bda0c07e97cda759aabdf4e817021083f",
+      "repository_path": "mydynamics/compute_jacobian.m",
+      "match": false,
+      "newline_normalized_match": true,
+      "status": "byte difference; see normalized comparison; original retained"
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/mydynamics/robot_forwarddynamics.m",
+      "bytes": 1779,
+      "sha256": "e7484b7a99367c50fe85d4050bf7e5ae3fdebe10f5109e45005b1e7fc78f92e8",
+      "repository_path": "mydynamics/robot_forwarddynamics.m",
+      "match": false,
+      "newline_normalized_match": true,
+      "status": "byte difference; see normalized comparison; original retained"
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/mydynamics/READ_ME.txt",
+      "bytes": 101,
+      "sha256": "62891e1e73ede423c100489de26c5907d34bb1ed06faf5cb95d10de9c9abe1bf",
+      "repository_path": "mydynamics/READ_ME.txt",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/assets/rigid_body.png",
+      "bytes": 29271,
+      "sha256": "56567bff5fabdd3f8eb8b63817b04176c7aa2ea104904e9136afc30c165b6a66",
+      "repository_path": "assets/rigid_body.png",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/control/tau.mat",
+      "bytes": 20570,
+      "sha256": "180f91bc11cafd02d5c81c6039c25b4a70a0aa63dc112568471765667487d559",
+      "repository_path": "control/tau.mat",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/control/ddq.mat",
+      "bytes": 15261,
+      "sha256": "5ca84b5d70ada91aea401749e4128b371eeb2913cfb39e8d38c92a124e582658",
+      "repository_path": "control/ddq.mat",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/control/controller.slx",
+      "bytes": 251254,
+      "sha256": "b4f96080f140f2a51cead40e767be7d4a109d3c39d6536c5c4f823bd411f6e22",
+      "repository_path": "control/controller.slx",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/control/time.mat",
+      "bytes": 2275,
+      "sha256": "7d1745f7aebbd97a22414ea2972af4d53ca8a2a84c7ca25dc0ef3d3074ae2d0e",
+      "repository_path": "control/time.mat",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/control/q.mat",
+      "bytes": 16744,
+      "sha256": "505361a61873557ef6a9663d1472f1bb6cf0fa706b969c13cf2a51bac2e2380e",
+      "repository_path": "control/q.mat",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/control/dq.mat",
+      "bytes": 15039,
+      "sha256": "eb93171b7a3c5cd3df4ed5c901f0851feeb40a8a9f9928fd468ee6619e2928bc",
+      "repository_path": "control/dq.mat",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/control/controller.slx.r2023b",
+      "bytes": 237236,
+      "sha256": "9f41eea5d10e1b7f02d84245a92aae15b9cf998c42978a2929dae74da95dc568",
+      "repository_path": "control/controller.slx.r2023b",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/control/tau_generator.mlx",
+      "bytes": 3095,
+      "sha256": "b3f19c120acc78a542c2cf8cf3c92a7b31220884300f83b75ac3946c200e8b3e",
+      "repository_path": "control/tau_generator.mlx",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/control/READ_ME.txt",
+      "bytes": 532,
+      "sha256": "64b4d08f8ccaefd87481e1638648b02cb2dc76da6c88d52fcb901f417809c803",
+      "repository_path": "control/READ_ME.txt",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/control/control_para.mlx",
+      "bytes": 98026,
+      "sha256": "e51be648ae34eceaffd1ef1ae85d19bfd0d02ebc31b48b7c6dd7318f0ec36af9",
+      "repository_path": "control/control_para.mlx",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/simulink/model/UR16e.step",
+      "bytes": 48100886,
+      "sha256": "b867a68e1a7abfd4b780bf104a5948214b3fb2f7434a6102fb0a1b5526603fde",
+      "repository_path": "simulink/model/UR16e.step",
+      "match": true,
+      "newline_normalized_match": true,
+      "header": "ISO-10303-21;\r\nHEADER;\r\nFILE_DESCRIPTION (( 'STEP AP214' ),\r\n    '1' );\r\nFILE_NAME ('1006927_Solid_A.step',\r\n    '2024-04-22T11:25:25',\r\n    ( '' ),\r\n    ( '' ),\r\n    'SwSTEP 2.0',\r\n    'SolidWorks 2020',\r\n    '' );\r\nFILE_SCHEMA (( 'AUTOMOTIVE_DESIGN' ));\r\nENDSEC;\r\n\r\nDATA;\r\n#1 = SURFACE_STYLE_FILL_AREA ( #26890 ) ;\r\n#2 =( GEOMETRIC_REPRESENTATION_CONTEXT ( 3 ) GLOBAL_UNCERTAINTY_ASSIGNED_CONTEXT ( ( #238997 ) ) GLOBAL_UNIT_ASSIGNED_CONTEXT ( ( #116934, #420127, #388886 ) ) REPRESENTATION_CONTEXT ( 'NONE', 'WORKASPACE' ) );\r\n#3 = CARTESIAN_POINT ( 'NONE',  ( -9.758529172313533451, 262.1814392579215678, 73.58953008069798329 ) ) ;\r\n#4 = ORIENTED_EDGE ( 'NONE', *, *, #204145, .T. ) ;\r\n#5 = CARTESIAN_POINT ( 'NONE',  ( -516.2729521433777791, 116.7014644960815275, 18.42521386850661003 ) ) ;\r\n#6 = CARTESIAN_POINT ( 'NONE',  ( 36.93346813854835631, 320.3473148622243230, 65.77134159859346596 ) ) ;\r\n#7 = CARTESIAN_POINT ( 'NONE',  ( 28.32980918867914966, 272.1143470739548889, 40.30097067734867977 ) ) ;\r\n#8 = EDGE_CURVE ( 'NONE', #178123, #96421, #101191, .T. ) ;\r\n#9 = CARTESIAN_POINT ( 'NONE',  ( 1.448530734950037147, 54.62857487226892772, 26.49783611238046177 ) ) ;\r\n#11 = CARTESIAN_POINT ( 'NONE',  ( -8.149930030606448383, 10.43381527126862096, -64.19946581166472299 ) ) ;\r\n#10 = SURFACE_SIDE_STYLE ('',( #33545 ) ) ;\r\n#13 = ORIENTED_EDGE ( 'NONE', *, *, #348048, .F. ) ;\r\n#12 = CARTESIAN_POINT ( 'NONE',  ( 52.12722764204274739, 61.10247246852127745, 60.75691064185972579 ) ) ;\r\n#14 = ORI"
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/simulink/model/meshes/read me.txt",
+      "bytes": 75,
+      "sha256": "24ce32090e302a8a0515c05a4bf6137653cb2c7e2a994d354e37967c3dc1c9a2",
+      "repository_path": "simulink/model/meshes/read me.txt",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/simulink/model/meshes/ur16e/visual/upperarm.dae",
+      "bytes": 3091148,
+      "sha256": "cb71422b3f721d161b49b18fb5582916fff191f9ab2afcd0440cefcf695ddf69",
+      "repository_path": "simulink/model/meshes/ur16e/visual/upperarm.dae",
+      "match": false,
+      "newline_normalized_match": true,
+      "status": "byte difference; see normalized comparison; original retained"
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/simulink/model/meshes/ur16e/visual/forearm.dae",
+      "bytes": 1343331,
+      "sha256": "137ac558584b58f3a55cb2a91929d4f485853ac8d2a0bdb6432823386393e212",
+      "repository_path": "simulink/model/meshes/ur16e/visual/forearm.dae",
+      "match": false,
+      "newline_normalized_match": true,
+      "status": "byte difference; see normalized comparison; original retained"
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/simulink/model/meshes/ur16e/collision/forearm.stl",
+      "bytes": 99584,
+      "sha256": "fc1c07390183b3874d66e3005795063980bc4f4a786504999f2e86250dcbfe0f",
+      "repository_path": "simulink/model/meshes/ur16e/collision/forearm.stl",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/simulink/model/meshes/ur16e/collision/upperarm.stl",
+      "bytes": 136984,
+      "sha256": "5c1eacd146739265039ccb0b75649b83719f67cb36cca42d1d11a8e4cd929175",
+      "repository_path": "simulink/model/meshes/ur16e/collision/upperarm.stl",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/simulink/model/meshes/ur10e/visual/base.dae",
+      "bytes": 370617,
+      "sha256": "0085d7f98ff3a66b6e753c9fac62bf3ce4aa1258d90752d5eeda82b80c13a524",
+      "repository_path": "simulink/model/meshes/ur10e/visual/base.dae",
+      "match": false,
+      "newline_normalized_match": true,
+      "status": "byte difference; see normalized comparison; original retained"
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/simulink/model/meshes/ur10e/visual/wrist3.dae",
+      "bytes": 71926,
+      "sha256": "7f9b06263287b4235f61b323f5cc486624bfb55d12e9814f90c3df065de8a045",
+      "repository_path": "simulink/model/meshes/ur10e/visual/wrist3.dae",
+      "match": false,
+      "newline_normalized_match": true,
+      "status": "byte difference; see normalized comparison; original retained"
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/simulink/model/meshes/ur10e/visual/wrist2.dae",
+      "bytes": 1428001,
+      "sha256": "9c7a830db19554c3bfc5397bcec20c65b5f942e07e0894c7d5d898e0cb9ba6c5",
+      "repository_path": "simulink/model/meshes/ur10e/visual/wrist2.dae",
+      "match": false,
+      "newline_normalized_match": true,
+      "status": "byte difference; see normalized comparison; original retained"
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/simulink/model/meshes/ur10e/visual/wrist1.dae",
+      "bytes": 1241548,
+      "sha256": "c209b7279e9e6d4bda8a54c2c81bb8b3436bc00d1da2b9faf77e195688e45c89",
+      "repository_path": "simulink/model/meshes/ur10e/visual/wrist1.dae",
+      "match": false,
+      "newline_normalized_match": true,
+      "status": "byte difference; see normalized comparison; original retained"
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/simulink/model/meshes/ur10e/visual/upperarm.dae",
+      "bytes": 3168983,
+      "sha256": "0617eee74c1d98c2f27f98732244a48d0da4d59847c87e610a2387cc97ba2de6",
+      "repository_path": "simulink/model/meshes/ur10e/visual/upperarm.dae",
+      "match": false,
+      "newline_normalized_match": true,
+      "status": "byte difference; see normalized comparison; original retained"
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/simulink/model/meshes/ur10e/visual/shoulder.dae",
+      "bytes": 2344670,
+      "sha256": "0bfe5d42b2d135692276efb1537f746b89a491d48e8be90448b632856b2a52d3",
+      "repository_path": "simulink/model/meshes/ur10e/visual/shoulder.dae",
+      "match": false,
+      "newline_normalized_match": true,
+      "status": "byte difference; see normalized comparison; original retained"
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/simulink/model/meshes/ur10e/visual/forearm.dae",
+      "bytes": 1375879,
+      "sha256": "f29caa6868a7f1a9e0476efc6fc960bc629e86f621bc8e40a17e4c3b78fd99fc",
+      "repository_path": "simulink/model/meshes/ur10e/visual/forearm.dae",
+      "match": false,
+      "newline_normalized_match": true,
+      "status": "byte difference; see normalized comparison; original retained"
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/simulink/model/meshes/ur10e/collision/forearm.stl",
+      "bytes": 67284,
+      "sha256": "7005ed835336ec03ce6a299a356c774bfe2ba989051e37b2a66406173dcb3c96",
+      "repository_path": "simulink/model/meshes/ur10e/collision/forearm.stl",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/simulink/model/meshes/ur10e/collision/shoulder.stl",
+      "bytes": 85284,
+      "sha256": "3f7c5f7ee742cf2d57130829be9f20b25625b3513d676ac5e20ca46ae84fd528",
+      "repository_path": "simulink/model/meshes/ur10e/collision/shoulder.stl",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/simulink/model/meshes/ur10e/collision/upperarm.stl",
+      "bytes": 93784,
+      "sha256": "663a935951c802b1c16ad7478e7ce754b2d48efb828bbe5d3915fb6bb51cd7db",
+      "repository_path": "simulink/model/meshes/ur10e/collision/upperarm.stl",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/simulink/model/meshes/ur10e/collision/base.stl",
+      "bytes": 22984,
+      "sha256": "8a214f3f650e703fa081bd4bd8b1caeb0667598bec22d8b0e572efb97d06e957",
+      "repository_path": "simulink/model/meshes/ur10e/collision/base.stl",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/simulink/model/meshes/ur10e/collision/wrist2.stl",
+      "bytes": 89184,
+      "sha256": "4b9e74eab991af3dc9d38c3dfaad2c5bc69591fadc855f7966627ba4d0956579",
+      "repository_path": "simulink/model/meshes/ur10e/collision/wrist2.stl",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/simulink/model/meshes/ur10e/collision/wrist3.stl",
+      "bytes": 6984,
+      "sha256": "7038904dd03dfea56212191ac61d26746b379dbddfd517b905e13c01e1c12e6a",
+      "repository_path": "simulink/model/meshes/ur10e/collision/wrist3.stl",
+      "match": true,
+      "newline_normalized_match": true
+    },
+    {
+      "archive_entry": "\u03c3\u00ea\u00ff\u03a3\u2555\u00c7\u03c4\u00bc\u00e6_\u03c3\u00c9\u2524\u03c3\u00ab\u00e7\u00b5\u00fa\u00ab_\u03a6\u2561\u2561\u00b5\u00c7\u00c7\u03a6\u2591\u00aa/src/simulink/model/meshes/ur10e/collision/wrist1.stl",
+      "bytes": 66984,
+      "sha256": "1408c3a0a29385fefe30ed44fceca56d2254f51ea93c75c404976816992324cc",
+      "repository_path": "simulink/model/meshes/ur10e/collision/wrist1.stl",
+      "match": true,
+      "newline_normalized_match": true
+    }
+  ]
+}
