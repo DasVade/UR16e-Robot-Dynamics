@@ -1,5 +1,11 @@
 # Source and execution audit — 2026-10-24
 
+Historical initial audit. The later [executed dynamics report](DYNAMICS_REPORT.md)
+supersedes the execution-status and repair-status statements below. Replaced
+MATLAB dynamics/import sources are preserved in baselines/; the original URDF,
+models, IK and planning sources remain intact. New dynamic results are URDF-based
+PyBullet execution, while MATLAB/Simulink remains unexecuted.
+
 Baseline: `da7a51b`; all original MATLAB, live scripts, Simulink models, MAT
 data, meshes and helper files are preserved. ORIGINAL_INVENTORY.json records
 586 original files, hashes, live-script/model XML members inspected and MAT

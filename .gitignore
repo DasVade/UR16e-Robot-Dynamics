@@ -7,3 +7,8 @@ slprj/
 .env*
 *.key
 *.pem
+.DS_Store
+._*
+__MACOSX/
+*.zip
+*.rar

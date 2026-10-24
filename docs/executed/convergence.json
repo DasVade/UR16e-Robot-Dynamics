@@ -1,0 +1,18 @@
+[
+  {
+    "case": "pd_gravity_nominal",
+    "max_joint_state_difference_rad": 5.0407206427127704e-05
+  },
+  {
+    "case": "computed_torque_nominal",
+    "max_joint_state_difference_rad": 2.4961536648548943e-05
+  },
+  {
+    "case": "pd_gravity_payload",
+    "max_joint_state_difference_rad": 5.7168691115494497e-05
+  },
+  {
+    "case": "computed_torque_payload",
+    "max_joint_state_difference_rad": 0.00016490529044443925
+  }
+]

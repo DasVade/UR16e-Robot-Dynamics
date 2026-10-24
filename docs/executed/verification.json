@@ -1,0 +1,16 @@
+{
+  "samples": 20,
+  "fk_m": 3.5565364688014805e-08,
+  "fk_rotation_rad": 2.7702697361658103e-07,
+  "dh_pose": 3.443892358789835e-10,
+  "jacobian": 5.551115123125783e-16,
+  "mass_symmetry": 0.0,
+  "mass_reference": 6.217248937900877e-15,
+  "gravity_reference": 6.414026643142279e-09,
+  "bias_reference": 6.383501727214025e-09,
+  "ik_position_m": 4.253683743055133e-12,
+  "ik_rotation_rad": 1.3569772642478586e-13,
+  "forward_inverse_acceleration": 4.431971456497763e-11,
+  "external_wrench_acceleration": 4.334310688136611e-13,
+  "minimum_mass_eigenvalue": 0.0008939376207499865
+}
