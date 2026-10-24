@@ -70,8 +70,10 @@ new extensions; original coursework is preserved.
 
 ## Execution and reproduction boundary
 
-MATLAB was not found on PATH or in `C:/Program Files/MATLAB`; WSL runtime
-inspection returned access denied. No MATLAB release/toolbox license could be
+MATLAB was not found on PATH or in `C:/Program Files/MATLAB`. The initial WSL
+inspection was denied by the sandbox; an approved retry found neither MATLAB
+nor Octave on WSL PATH, or a MATLAB installation under /usr/local or /opt.
+No MATLAB release/toolbox license could be
 verified. Model metadata identifies **R2025a**, with an older controller backup
 named r2023b. Use R2025a or newer for the original models; exact toolbox/runtime
 compatibility still requires a licensed run. Legacy code needs Symbolic Math
