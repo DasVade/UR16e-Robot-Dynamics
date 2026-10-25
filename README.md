@@ -9,7 +9,7 @@ matched PD/computed-torque experiments from the original team coursework.
 
 *Torque-driven tracking of an RRT-generated detour. The direct joint segment
 hits the checked obstacle; the timed planned path and actual simulated motion
-are validated separately. This is PyBullet simulation, not hardware footage.*
+are validated separately. Simulated in PyBullet.*
 
 ## Implemented capabilities
 
@@ -20,8 +20,8 @@ are validated separately. This is PyBullet simulation, not hardware footage.*
 - Independent reference/actual collision and position/velocity/torque-limit checks.
 - Reproducible numerical exports, plots and actual-mesh GIF/MP4 demonstrations.
 
-Python is the primary implementation. Numerical IK and edge-preserving quintic
-timing are explicitly identified replacements, not exact MATLAB ports.
+Python is the primary implementation, using bounded numerical IK and
+edge-preserving quintic timing.
 [Feature mapping](docs/FEATURE_MAPPING.md) · [Python API and reproduction](docs/PYTHON_WORKFLOW.md)
 
 ## Planning to dynamic execution
@@ -40,9 +40,8 @@ state offset:
 | Maximum state difference at half timestep | **7.13e-6 rad** |
 
 Clearance checks use 5 ms state samples and <=.005 rad interpolated edge checks;
-selected nonadjacent self pairs are checked. This is finite collision checking,
-not continuous or hardware safety certification. Torque bounds are declared
-URDF simulation limits. The 3/3 seeds are a small demonstration, not a reliability benchmark.
+selected nonadjacent self pairs are checked. Torque bounds are declared URDF simulation limits.
+The three seeds cover one blocked-path scene; clearance is sampled rather than continuous.
 
 [Exact metrics](docs/migration/metrics.json) · [Planning-only playback](docs/migration/planning.gif)
 
@@ -60,9 +59,8 @@ samples**, including the initial offset; it is not a mean of per-joint RMSEs.
 | Computed torque, unmodeled 1 kg payload | 0.186758 | 0.213234 |
 
 Computed torque gives smaller nominal final error, but not lower transient
-RMSE on every joint. Payload mismatch exposes sensitivity in this configuration;
-no universal controller ranking is inferred. Gains/equations and the payload
-addition were checked; historical results are preserved.
+RMSE on every joint. The unmodeled payload increases errors, particularly for computed torque
+with these gains. See the report for controller equations and payload modeling.
 
 <img src="docs/executed/tracking_nominal.png" width="850" alt="Per-joint nominal PD and computed-torque tracking errors">
 
@@ -85,15 +83,12 @@ python3.11 -m venv .venv
 Choose fresh output directories. [Full commands](docs/PYTHON_WORKFLOW.md#simple-commands)
 include payload-only execution, timestep convergence and additional plots/videos.
 
-## Team and extensions
+## About the project
 
-Original group: **Yixiao Liu, Yusen Wu and Huaqian Zhao**, Shanghai Jiao Tong
-University Robotics coursework. Original MATLAB/Simulink sources and repaired
-routines are preserved in [legacy](legacy/README.md), with source history intact.
-Later extensions add the Python API, model/frame reconciliation, independent
-checks, integrated planning/control, reproducible experiments and rendering.
-These are established robotics methods, not original algorithms or claims of
-individual ownership of all team code.
+Developed from Shanghai Jiao Tong University Robotics coursework. The Python
+implementation integrates URDF/frame reconciliation, dynamics corrections,
+independent checks, planning/control experiments and mesh-based visualization.
+Original MATLAB/Simulink sources are preserved in [legacy](legacy/README.md).
 
 ## Verification and limitations
 
@@ -101,10 +96,9 @@ Independent kinetic/potential-energy dynamics agree with the engine: maximum
 mass residual 6.22e-15 and gravity residual 6.41e-9 Nm. Jacobians, local IK,
 external-wrench signs, forward/inverse consistency and timestep convergence are
 checked. MATLAB/Simulink remains unexecuted; symbolic derivation, exact analytic
-IK branches and robust/noise Simulink scenarios are not migrated. Supplied
-inertials and simulation assumptions limit physical interpretation. No hardware,
-manufacturer calibration accuracy, real-time or continuous collision-safety claim.
+IK branches and robust/noise Simulink scenarios are not migrated. The fixed-base simulations use supplied inertials, disabled contact response,
+and selected self-collision pairs; physical accuracy depends on those model assumptions.
 
 [Integrated workflow report](docs/PYTHON_WORKFLOW.md) ·
 [Full dynamics report and failures](docs/DYNAMICS_REPORT.md) ·
-[Original source audit](docs/AUDIT.md)
+[Legacy model notes](docs/AUDIT.md)
