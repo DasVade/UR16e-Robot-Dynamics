@@ -4,7 +4,7 @@ Python is the primary runnable implementation. Original MATLAB/Simulink source
 and repaired MATLAB routines live in [legacy](../legacy/README.md); shared URDF
 and mesh assets remain at root `simulink/`. The [feature mapping](FEATURE_MAPPING.md)
 distinguishes migrated functionality, replacements and unsupported modules.
-No MATLAB/Simulink numerical equivalence is claimed.
+MATLAB/Simulink sources are retained in `legacy/`; the results here use Python.
 
 ## Interfaces and conventions
 
@@ -18,11 +18,9 @@ adds it. Independent energy-reference checks remain in `urdf_model.Model`.
 The original UR `base` / `tool0` versus DH reconciliation remains as documented
 in [the dynamics report](DYNAMICS_REPORT.md).
 
-Numerical IK is a replacement for the original branch-based solver, not an
-exact translation. The RRT and shortcut planner adapt the original joint-space
+Bounded numerical IK replaces the original branch-based solver. The RRT and shortcut planner adapt the original joint-space
 ideas while adding explicit limits, zero-distance guards and edge checking.
-The old B-spline/time-optimization workflow is not claimed as ported: new
-timing follows each validated straight joint-space edge with a rest-to-rest
+Integrated timing follows each validated straight joint-space edge with a rest-to-rest
 quintic scalar, giving C2 position/velocity/acceleration through stopped knots.
 This prevents interpolation from silently cutting across obstacles.
 
@@ -72,7 +70,7 @@ Reference and actual simulated paths are checked separately every 5 ms, with
 additional joint-space interpolation checks at <=.005 rad between samples.
 Minimum reported clearance is over the 5 ms samples; refined edge checks are
 reported separately. Limits are supplied-model bounds, not verified hardware
-ratings. No continuous collision-safety or unmodeled-disturbance claim follows.
+ratings. Clearance is evaluated on the declared sampling grid.
 
 [Exact configuration](migration/config.json), [metrics](migration/metrics.json),
 [convergence](migration/convergence.json), [path](migration/path.json) and
@@ -117,7 +115,7 @@ on the website with no autoplay or eager loading of every video.
 ## Simple commands
 
 Linux/WSL Python 3.11; pinned numerical/mesh packages plus system **ffmpeg** for
-MP4 export. No new distribution or paid compute is needed. This machine uses
+MP4 export.  This machine uses
 `/home/yxlewis/.venvs/ur16e/bin/python`; on another machine:
 
 ```bash
@@ -142,13 +140,11 @@ was computed that way. `cli visualize` generates planning/execution GIF, MP4,
 posters, numerical review traces and tracking plots. `export_experiments.py`
 continues to provide the original nominal/payload per-joint plots.
 
-## Boundaries
+## Model limitations
 
-Original group: **Yixiao Liu, Yusen Wu and Huaqian Zhao**. Python integration,
-numerical checks and rendering are later extensions using established methods.
-Symbolic derivation, exact analytic IK branch behavior, original time-optimal
-B-splines, and robust/noise Simulink blocks remain legacy/unsupported; they are
-not silently presented as migrated. MATLAB/Simulink remains unexecuted. Inertial
-data are supplied model parameters, not experimentally identified manufacturer
-truth. Discrete collision checking, one model/trajectory and three seeds cannot
-establish physical robot safety, hardware accuracy or broad robustness.
+The fixed-base experiments use supplied model inertials, disabled friction and
+contact response, selected self-collision pairs, and sampled clearance checks.
+The three planning seeds cover one obstacle scene. Symbolic derivation,
+analytical IK branches, time-optimal B-splines and robust/noise Simulink blocks
+remain in the legacy implementation. MATLAB/Simulink has not been executed on
+the experiment host.

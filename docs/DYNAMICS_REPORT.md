@@ -7,15 +7,11 @@ The original URDF/meshes remain at root `simulink/`. Results in this report are
 preserved; the new blocked-path experiment is a separate measured scenario.
 
 Executed 2026-10-24 in the existing WSL2 installation, Python 3.11.15 and
-PyBullet 3.2.7. The original MATLAB/Simulink route could not be executed:
-MATLAB was absent from Windows PATH, its standard install directory, the
-Windows installed-program registry check, WSL PATH and standard WSL locations.
-No licensed toolboxes were found. Original model metadata identifies R2025a;
-Robotics System Toolbox, Simulink and model-dependent Simscape/Multibody remain
-requirements for that route. These results are the authorized URDF-based
-Python implementation, not evidence of Simulink execution.
+PyBullet 3.2.7. MATLAB/Simulink was unavailable on this host. Original model metadata identifies
+R2025a; that route requires Robotics System Toolbox, Simulink and model-dependent
+Simscape/Multibody. The experiments below use the URDF-based Python implementation.
 
-## Original archive and provenance
+## Source model and archive
 
 The supplied archive SHA-256 and a safe-file inventory are recorded in
 [archive_reconciliation.json](executed/archive_reconciliation.json). It has
@@ -24,19 +20,16 @@ The supplied archive SHA-256 and a safe-file inventory are recorded in
 The source URDF is semantically identical despite byte-level differences.
 The extra standalone URDF, course report, datasheet, meshes RAR and 48 MB STEP
 were inspected as archive inputs, not bulk-imported. The STEP header identifies
-AP214, SolidWorks 2020 and a 2024 export; no CAD mass-property validation is
-claimed. The report text describes alternate DH tables and earlier numerical
+AP214, SolidWorks 2020 and a 2024 export. The report text describes alternate DH tables and earlier numerical
 IK/dynamics comparisons; those historical claims are not substituted for
 present execution. No nested `.git`, slprj, slxc or macOS files were imported.
 
 The original report identifies a Shanghai Jiao Tong University Robotics team
 project by **Yixiao Liu, Yusen Wu and Huaqian Zhao**, supervised by Ding Ye.
-Group attribution is retained; individual authorship of every helper is not
-established. Existing FK/IK, dynamics, RRT, live scripts, Simulink models and
+Existing FK/IK, dynamics, RRT, live scripts, Simulink models and
 URDF/meshes remain traceable. New work comprises model reconciliation, dynamics
 repairs, the independent URDF energy reference, executed experiments, portable
-RRT adaptation, tests and mesh-based result rendering. No novel algorithm,
-hardware trial or manufacturer validation is claimed.
+RRT adaptation, tests and mesh-based result rendering.
 
 ## Model, frames and parameters
 
@@ -215,11 +208,8 @@ edge sampling do not certify continuous clearance or full self-collision safety.
 
 ## Reproduce
 
-Use Linux/WSL Python 3.11. The Windows PyBullet source build lacked a C++ compiler;
-the Linux wheel ran in the existing WSL distribution. No new distribution or
-paid compute was used. Persistent environment on this machine:
-`/home/yxlewis/.venvs/ur16e`; bin/python and bin/python3 aliases were corrected
-to its Python 3.11 interpreter after an initial system-Python venv failure.
+Use Linux/WSL Python 3.11. The persistent environment on the experiment host is
+`/home/yxlewis/.venvs/ur16e`.
 
 ```bash
 # From the repository root in the existing WSL installation:
@@ -240,7 +230,7 @@ versioned. Four tests check recorded independent-dynamics residuals, transformed
 DH inertias, finite-difference Jacobians and independently recomputed saved
 metrics/actuator bounds.
 
-For a licensed MATLAB installation, use `addpath('mydynamics')` explicitly;
+For a licensed MATLAB installation, use `addpath('legacy/mydynamics')` explicitly;
 avoid `genpath` because retained baseline functions intentionally share names.
 The earlier base-MATLAB kinematics demo remains available separately. Repaired
 MATLAB dynamics and the original Simulink controller still need a licensed run;
@@ -250,8 +240,8 @@ the embedded Simulink dynamics were not automatically replaced by `.m` repairs.
 
 Supplied inertials are approximate model data; no friction, drive electronics,
 thermal behavior, calibration error, collisions during tracking or hardware
-validation is modeled. Payload is one declared perturbation. Controller gain
-choices differ, one trajectory is tested, planning is secondary/easy, and no
-real-time or general robustness claim is supported. Original archives and STEP
+validation is modeled. Payload is one declared perturbation. Controller gains differ, one nominal trajectory is tested, and the initial
+planning scene has a valid direct path. The separate blocked-path experiment
+is documented in the Python workflow report. Original archives and STEP
 are not required to rerun the URDF experiments because the relevant original
 URDF and meshes already exist in Git.
