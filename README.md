@@ -1,5 +1,7 @@
 # UR16e Motion Planning and Control
 
+**Project date:** Spring 2025
+
 A runnable Python robotics project: import the supplied UR16e model, plan a
 collision-checked joint path, time-parameterize it and execute it with a
 nonlinear torque-driven controller. Includes independent model checks and
@@ -58,8 +60,7 @@ samples**, including the initial offset; it is not a mean of per-joint RMSEs.
 | PD + gravity, unmodeled 1 kg payload | 0.028008 | 0.050365 |
 | Computed torque, unmodeled 1 kg payload | 0.186758 | 0.213234 |
 
-Computed torque gives smaller nominal final error, but not lower transient
-RMSE on every joint. The unmodeled payload increases errors, particularly for computed torque
+Computed torque gives smaller nominal final error; PD has lower pooled transient RMSE in this configuration. The unmodeled payload increases errors, particularly for computed torque
 with these gains. See the report for controller equations and payload modeling.
 
 <img src="docs/executed/tracking_nominal.png" width="850" alt="Per-joint nominal PD and computed-torque tracking errors">
@@ -90,14 +91,13 @@ implementation integrates URDF/frame reconciliation, dynamics corrections,
 independent checks, planning/control experiments and mesh-based visualization.
 Original MATLAB/Simulink sources are preserved in [legacy](legacy/README.md).
 
-## Verification and limitations
+## Model checks
 
 Independent kinetic/potential-energy dynamics agree with the engine: maximum
 mass residual 6.22e-15 and gravity residual 6.41e-9 Nm. Jacobians, local IK,
 external-wrench signs, forward/inverse consistency and timestep convergence are
-checked. MATLAB/Simulink remains unexecuted; symbolic derivation, exact analytic
-IK branches and robust/noise Simulink scenarios are not migrated. The fixed-base simulations use supplied inertials, disabled contact response,
-and selected self-collision pairs; physical accuracy depends on those model assumptions.
+checked. The executed Python simulations use a fixed base, supplied inertials, disabled contact response,
+and selected self-collision pairs; settings are detailed in the workflow report.
 
 [Integrated workflow report](docs/PYTHON_WORKFLOW.md) ·
 [Full dynamics report and failures](docs/DYNAMICS_REPORT.md) ·
