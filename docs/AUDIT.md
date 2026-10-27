@@ -60,7 +60,6 @@ model-dependent Simscape/Multibody support. `knnsearch` additionally requires
 Statistics and Machine Learning Toolbox. MATLAB/Simulink was unavailable on
 the experiment host; Python is the executed workflow.
 
-The original README and report retain the Robotics Spring 2025 team credits.
 SerialLink/Link are Peter Corke Robotics Toolbox APIs; URDF comments retain
 xacro/UR-description references. Existing source licenses and notices remain
 with their files.

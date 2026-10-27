@@ -1,8 +1,8 @@
-# Preserved MATLAB and Simulink coursework
+# Preserved MATLAB and Simulink implementation
 
 Python in `portfolio/` is the primary runnable implementation. These MATLAB
-sources and data retain the original team attribution: Yixiao Liu, Yusen Wu
-and Huaqian Zhao. They have not been executed in MATLAB during this extension.
+sources and data are preserved for inspection; the reported experiments were
+executed in Python, not MATLAB.
 
 - `mykinematics/`, `RRT/`, `control/`: retained original MATLAB/Simulink source
   and reference data, moved with Git history intact. The analytic IK and full

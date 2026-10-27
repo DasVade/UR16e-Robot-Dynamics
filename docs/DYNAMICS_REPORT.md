@@ -18,18 +18,17 @@ The supplied archive SHA-256 and a safe-file inventory are recorded in
 72 non-cache/non-metadata files considered here: 46 exact repository matches,
 66 matches after newline normalization against the retained original sources.
 The source URDF is semantically identical despite byte-level differences.
-The extra standalone URDF, course report, datasheet, meshes RAR and 48 MB STEP
+The extra standalone URDF, project report, datasheet, meshes RAR and 48 MB STEP
 were inspected as archive inputs, not bulk-imported. The STEP header identifies
 AP214, SolidWorks 2020 and a 2024 export. The report text describes alternate DH tables and earlier numerical
 IK/dynamics comparisons; those historical claims are not substituted for
 present execution. No nested `.git`, slprj, slxc or macOS files were imported.
 
-The original report identifies a Shanghai Jiao Tong University Robotics team
-project by **Yixiao Liu, Yusen Wu and Huaqian Zhao**, supervised by Ding Ye.
-Existing FK/IK, dynamics, RRT, live scripts, Simulink models and
-URDF/meshes remain traceable. New work comprises model reconciliation, dynamics
-repairs, the independent URDF energy reference, executed experiments, portable
-RRT adaptation, tests and mesh-based result rendering.
+The project was completed during Jun–Aug 2025. Its FK/IK, dynamics, RRT, live
+scripts, Simulink models and URDF/meshes are retained. The runnable Python
+pipeline integrates model reconciliation, dynamics repairs, an independent
+URDF energy reference, reproducible experiments, RRT planning, tests and
+mesh-based result rendering.
 
 ## Model, frames and parameters
 
