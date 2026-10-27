@@ -1,11 +1,11 @@
 # UR16e Motion Planning and Control
 
-**Project date:** Spring 2025
+**Project date:** Jun–Aug 2025
 
 A runnable Python robotics project: import the supplied UR16e model, plan a
 collision-checked joint path, time-parameterize it and execute it with a
 nonlinear torque-driven controller. Includes independent model checks and
-matched PD/computed-torque experiments from the original team coursework.
+matched PD/computed-torque experiments.
 
 <img src="docs/migration/execution.gif" width="720" alt="Actual UR16e meshes dynamically track a timed RRT detour around the checked red box; orange desired and blue actual end-effector paths">
 
@@ -86,7 +86,7 @@ include payload-only execution, timestep convergence and additional plots/videos
 
 ## About the project
 
-Developed from Shanghai Jiao Tong University Robotics coursework. The Python
+Completed during my software engineering internship at UAES. The Python
 implementation integrates URDF/frame reconciliation, dynamics corrections,
 independent checks, planning/control experiments and mesh-based visualization.
 Original MATLAB/Simulink sources are preserved in [legacy](legacy/README.md).

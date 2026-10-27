@@ -3,10 +3,10 @@
 The primary interface is `python portfolio/cli.py`. Python uses the same supplied
 URDF/meshes, with numerical IK and path-preserving timing for the integrated workflow.
 
-| Coursework feature | Python implementation | Status and distinction |
+| Feature | Python implementation | Status and distinction |
 |---|---|---|
 | URDF/mesh import | `urdf_model.prepare`, `robot.Robot` | Executed; package paths resolved, DAE visuals converted to OBJ, inertia-file loading explicit |
-| Modified/standard DH FK | `Model.frames`, standard-DH audit | Executed URDF FK and reconciled standard-DH comparison; modified-DH student function retained in legacy with its separate joint offsets |
+| Modified/standard DH FK | `Model.frames`, standard-DH audit | Executed URDF FK and reconciled standard-DH comparison; modified-DH function retained in legacy with its separate joint offsets |
 | Geometric Jacobians | `Model.jac`, `Robot.jacobian` | Executed; engine and finite-difference checks |
 | Analytical eight-branch IK / report's iterative IK | `Robot.ik` | Replacement: bounded numerical full-pose least squares; local residual checks, not exact branch enumeration or global coverage |
 | M, gravity, Coriolis/velocity terms | `Robot.mass`, `gravity`, `velocity_terms`; independent `Model.dynamics` | Executed engine calculations cross-checked by independent URDF kinetic/potential-energy formulation |
